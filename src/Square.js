@@ -1,7 +1,8 @@
-const Square = ({ color }) => {
+const Square = ({ color, hex }) => {
   return (
     <div className='color' style={{backgroundColor:color}}>
-        {color ? color : "Empty Value"}
+        <p>{color ? color : "Empty Value"}</p>
+        <p>{hex ? hex : null}</p>
     </div>
   )
 }
